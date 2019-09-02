@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void onClick02(View view){
+        Intent intent2 = new Intent(this, MapActivity.class);
+        startActivity(intent2);
+    }
     public void onClick03(View view){
         Intent intent3 = new Intent(this, WeatherActivity.class);
         startActivity(intent3);
