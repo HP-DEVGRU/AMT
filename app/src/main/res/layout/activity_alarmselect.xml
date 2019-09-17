@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebf2f5"
+    >
+
+    <TextView
+        android:id="@+id/etAlarmType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="74dp"
+        android:onClick="onClick_alarmtype"
+        android:text="알람종류"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/baseline_eco_black_18dp"
+        />
+
+    <EditText
+        android:id="@+id/etAlarmName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="알람제목"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etAlarmContent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="알람세부내용"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/etAlarmSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="257dp"
+        android:onClick="onClick_alarmsemi"
+        android:text="알람세부설정"
+        android:drawableLeft="@drawable/baseline_eco_black_18dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etAlarm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="306dp"
+        android:ems="10"
+        android:hint="딜레이시간"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSet"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="확인" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="8dp"
+        android:text="알림 생성"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="25sp" />
+
+</RelativeLayout>

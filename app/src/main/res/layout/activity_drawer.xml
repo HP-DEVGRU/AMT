@@ -1,0 +1,110 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#d0ebf7"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0ebf7"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="알림 유형(시간/유형)"
+            android:drawableLeft="@drawable/baseline_alarm_black_18dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0ebf7"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d0ebf7"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="메시지 알림"
+            android:drawableLeft="@drawable/baseline_mail_outline_black_18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0ebf7"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d0ebf7"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="소리"
+            android:drawableLeft="@drawable/baseline_notifications_black_18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d0ebf7"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d0ebf7"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="진동"
+            android:drawableLeft="@drawable/baseline_notifications_active_black_18dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/closedrawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b3e0f5"
+        android:textColor="#000000"
+        android:text="Close Drawer" />
+
+
+
+
+</LinearLayout>
+
