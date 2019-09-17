@@ -23,7 +23,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAHhcsU652XPiitJ3SPBTcW2jO5Rfq8fOk"/>
+            android:value=""/>
 
         <receiver android:name="Alarm"/>
         <activity android:name=".AlarmSubActivity"/>
