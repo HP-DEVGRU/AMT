@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -17,7 +18,7 @@ public class FirstFragment extends Fragment
     SwipeRefreshLayout refreshLayout;
     TextView textView;
 
-    String[] events={"이렇게는 못삽니다","사퇴할래요","앱 좆같네","이 시발"};
+    ImageView image_;
 
     public FirstFragment()
     {
@@ -30,36 +31,32 @@ public class FirstFragment extends Fragment
         super.onCreate(savedInstanceState);
 
     }
+
+    public void setImage(int i){
+switch(i){
+    case 0: image_.setImageResource(R.drawable.image_bag);break;
+    case 1:image_.setImageResource(R.drawable.image_ear);break;
+    case 2:image_.setImageResource(R.drawable.image_rain);break;
+    case 3:image_.setImageResource(R.drawable.image_wal);break;
+}
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         RelativeLayout layout = (RelativeLayout) inflater.inflate(R.layout.fragment_first, container, false);
 
        //firstFragmentControl
-
-        for(int i=0; i< ((MainActivity)getActivity()).number; i++ ){
-            int index = (int)(Math.random()* ((MainActivity)getActivity()).number);
-            String temp =  events[i];
-            events[i] =  events[index];
-            events[index] = temp;
-        }
+       image_= (ImageView)layout.findViewById(R.id.image_);
+        setImage(((MainActivity)getActivity()).count );
         refreshLayout = layout.findViewById(R.id.refreshLayout);
-        textView = layout.findViewById(R.id.event0);
-        textView.setText(events[0]);
         refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 ((MainActivity)getActivity()).count = (++((MainActivity)getActivity()).count)%((MainActivity)getActivity()).number;
-                textView.setText(events[((MainActivity)getActivity()).count]);
+                setImage(((MainActivity)getActivity()).count );
                 refreshf();
-
             }
         });
-
-
-
-
-
         return layout;
     }
     private void refreshf(){

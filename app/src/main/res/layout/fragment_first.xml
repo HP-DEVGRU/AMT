@@ -13,13 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/event0"
+        <ImageView
+            android:id="@+id/image_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="TextView"
-            android:textSize="36sp" />
+            app:srcCompat="@drawable/image_wal" />
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
